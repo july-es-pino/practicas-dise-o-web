@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: url(./imagen-SailorMoon/tokio-image-sergio-rola-.jpg);
+    color: rgb(233, 214, 250);
+    background-size: 80%;
+    background-attachment: fixed;
+}
+
+.container{
+    
+    margin: 20px;
+    /*width: 90%;
+    max-width: 1000px;*/
+}
+
+img{
+
+    
+    border-radius: 10px;
+    
+}
+
+.botones {
+    
+    padding: 20px 20px;
+}
+
+.main {
+
+   
+    display: flex;
+    align-content: space-between;
+}
+
+.imagenS {
+    
+    margin: 65px 5px 65px 65px;
+    
+}
+
+.frase {
+    color: rgb(250, 151, 209);
+    
+    height: 650px;
+    width: 950px;
+    margin: 250px;
+    font-size: 65px;
+    text-align: center;
+    
+}
+
+
+
+.btn {
+    background-color: rgb(249, 182, 238);
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 20px 30px;
+    margin: 100px;
+    border-radius: 30px;
+
+}
+
+.btn:hover{
+    background-color: rgb(109, 70, 145);
+}
