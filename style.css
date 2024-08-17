@@ -11,61 +11,109 @@ body {
 }
 
 .container{
-    
+    /*background: white;*/
     margin: 20px;
-    /*width: 90%;
-    max-width: 1000px;*/
+    width: 90%;
+    max-width: 1700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
-img{
-
-    
-    border-radius: 10px;
+header {
+    /*background-color: aqua;*/
+    width: 100%;
+    padding: 50px 0;
+    /*display: flex;
+    flex-direction: column;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-.botones {
-    
-    padding: 20px 20px;
+header .botones a{
+    color: white;
+    text-decoration: none;
+}
+header .titulo h1{
+    font-size: 75px;
+
 }
 
 .main {
-
-   
+    /*background-color: chocolate;*/
+    padding: 20px;
+    width: 70%;
     display: flex;
-    align-content: space-between;
+    flex-direction: column;
 }
 
-.imagenS {
-    
-    margin: 65px 5px 65px 65px;
-    
+.main .imagenS{
+    margin-bottom: 20px;
+     
 }
 
-.frase {
-    color: rgb(250, 151, 209);
-    
-    height: 650px;
-    width: 950px;
-    margin: 250px;
-    font-size: 65px;
-    text-align: center;
-    
+.main .imagenS img{
+    width: 80%;
+    vertical-align: top;
+    border-radius: 5px;
 }
 
+.main .frase h1{
+   
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 52px;
+}
 
+article h1{
+    font-size: 25px;
+}
 
-.btn {
-    background-color: rgb(249, 182, 238);
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    padding: 20px 30px;
-    margin: 100px;
-    border-radius: 30px;
+article p{
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding-left: 15px;
 
 }
 
-.btn:hover{
-    background-color: rgb(109, 70, 145);
+aside {
+    width: 25%;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.cajitas{
+    background-color: rgb(197, 141, 249);
+    padding: 15px;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .cajitas{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+
+    section .main{
+
+        flex-direction: column;
+    }
+    
 }
